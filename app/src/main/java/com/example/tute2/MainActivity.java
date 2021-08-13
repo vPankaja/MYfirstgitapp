@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
-
+//sad
 public class MainActivity extends AppCompatActivity {
     EditText et_temp;
     RadioButton rd_btn_c;
