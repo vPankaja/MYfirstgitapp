@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="@string/et_temp"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="260dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_temp">
+
+        <RadioButton
+            android:id="@+id/rd_btn_c"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:hint="@string/rd_btn_c"
+            android:text="@string/rd_btn_c" />
+
+        <RadioButton
+            android:id="@+id/rd_btn_f"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:hint="@string/rd_btn_f"
+            android:text="@string/rd_btn_f" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="153dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="60dp"
+        android:hint="@string/btn"
+        android:text="@string/btn"
+        app:layout_constraintEnd_toStartOf="@+id/tv_answer"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tv_answer"
+        android:layout_width="77dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:textSize="20sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="174dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        app:srcCompat="@drawable/temperature" />
+</androidx.constraintlayout.widget.ConstraintLayout>
